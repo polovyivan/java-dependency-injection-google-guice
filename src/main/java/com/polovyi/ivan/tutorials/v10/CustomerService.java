@@ -1,25 +1,25 @@
-package com.polovyi.ivan.tutorials.v11;
+package com.polovyi.ivan.tutorials.v10;
 
 import com.google.inject.Inject;
-import com.polovyi.ivan.tutorials.v11.ReportGenerator.ReportType;
 
 public class CustomerService {
 
+    private ReportGenerator reportGenerator;
     private ThirdPartyEmailAPIClient apiClient;
-    private ReportGeneratorFactory factory;
+
     private RetryQueueClientProvider retryQueueClientProvider;
 
     @Inject
-    public CustomerService(ThirdPartyEmailAPIClient apiClient,
-            ReportGeneratorFactory factory, RetryQueueClientProvider retryQueueClientProvider) {
+    public CustomerService(@CSVReportImpl ReportGenerator reportGenerator, ThirdPartyEmailAPIClient apiClient,
+            RetryQueueClientProvider retryQueueClientProvider) {
+        this.reportGenerator = reportGenerator;
         this.apiClient = apiClient;
-        this.factory = factory;
         this.retryQueueClientProvider = retryQueueClientProvider;
     }
 
     public void generateCustomerReport() {
         System.out.println("apiClient = " + apiClient);
-        String report = factory.getReportGenerator(ReportType.CSV).generate();
+        String report = reportGenerator.generate();
         System.out.println("report = " + report);
         try {
             //   if (1 == 1) {

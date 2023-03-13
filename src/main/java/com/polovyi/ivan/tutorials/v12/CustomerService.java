@@ -1,7 +1,7 @@
-package com.polovyi.ivan.tutorials.v11;
+package com.polovyi.ivan.tutorials.v12;
 
 import com.google.inject.Inject;
-import com.polovyi.ivan.tutorials.v11.ReportGenerator.ReportType;
+import com.polovyi.ivan.tutorials.v12.ReportGenerator.ReportType;
 
 public class CustomerService {
 
