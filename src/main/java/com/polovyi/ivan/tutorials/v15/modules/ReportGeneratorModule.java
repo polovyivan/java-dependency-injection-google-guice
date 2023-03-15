@@ -1,8 +1,13 @@
-package com.polovyi.ivan.tutorials.v15;
+package com.polovyi.ivan.tutorials.v15.modules;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Scopes;
 import com.google.inject.name.Names;
+import com.polovyi.ivan.tutorials.v15.CustomerDAO;
+import com.polovyi.ivan.tutorials.v15.RetryQueueClient;
+import com.polovyi.ivan.tutorials.v15.RetryQueueClientProvider;
+import com.polovyi.ivan.tutorials.v15.ThirdPartyEmailAPIClient;
+import com.polovyi.ivan.tutorials.v15.ThirdPartyEmailAPIClientProvider;
 
 public class ReportGeneratorModule extends AbstractModule {
 

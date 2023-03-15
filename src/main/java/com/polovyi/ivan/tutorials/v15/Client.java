@@ -2,6 +2,8 @@ package com.polovyi.ivan.tutorials.v15;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+import com.polovyi.ivan.tutorials.v15.modules.OptionalBinderModule;
+import com.polovyi.ivan.tutorials.v15.modules.ReportGeneratorModule;
 
 
 public class Client {

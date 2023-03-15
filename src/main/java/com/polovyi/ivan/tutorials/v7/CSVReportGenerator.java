@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import lombok.AllArgsConstructor;
 
-@AllArgsConstructor(onConstructor=@__(@Inject))
+@AllArgsConstructor(onConstructor_ = @Inject)
 public class CSVReportGenerator implements ReportGenerator {
 
     private CustomerDAO dao;

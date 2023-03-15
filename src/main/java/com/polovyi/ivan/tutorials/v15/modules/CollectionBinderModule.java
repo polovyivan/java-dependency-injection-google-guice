@@ -1,10 +1,13 @@
-package com.polovyi.ivan.tutorials.v15;
+package com.polovyi.ivan.tutorials.v15.modules;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Scopes;
 import com.google.inject.multibindings.MapBinder;
 import com.google.inject.name.Names;
+import com.polovyi.ivan.tutorials.v15.CSVReportGenerator;
+import com.polovyi.ivan.tutorials.v15.ReportGenerator;
 import com.polovyi.ivan.tutorials.v15.ReportGenerator.ReportType;
+import com.polovyi.ivan.tutorials.v15.XMLReportGenerator;
 
 public class CollectionBinderModule extends AbstractModule {
 

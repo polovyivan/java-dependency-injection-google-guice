@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 
-@AllArgsConstructor(onConstructor = @__(@Inject))
+@AllArgsConstructor(onConstructor_ = @Inject)
 public class XMLReportGenerator implements ReportGenerator {
 
     private CustomerDAO dao;
